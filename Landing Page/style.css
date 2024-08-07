@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Romelio Sans';
+    src: url('fonts/Romelio.woff2') format('woff2'),
+         url('fonts/Romelio.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, img, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e2e2e2;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Romelio Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 200px;
+    margin-bottom: 1px;
+    width: 300px;
+    height: 150px; /* Ajusta el tamaño del logo */
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.logo img:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    transform: scale(1.2); /* Efecto de aumento en hover */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-list a {
+    color: #fff;
+    font-weight: 700;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.menu-list a:hover {
+    color: #e4166c;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.text-area {
+    max-width: 50%;
+}
+
+.desc {
+    font-size: 1.2rem;
+    color: #252525;
+}
+
+.heading {
+    font-family: 'Romelio Sans', sans-serif;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.heading span {
+    color: #eb0f63;
+    font-weight: 900;
+}
+
+.tag-line {
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-shop, .btn-learn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-shop {
+    background-color: #e01172;
+    color: #fff;
+}
+
+.btn-shop:hover {
+    background-color: #0aa7e6;
+}
+
+.btn-learn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.btn-learn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.image-area img {
+    max-width: 100%;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    transition: filter 0.3s, transform 0.3s;
+    float: right;
+    margin: 20px;
+    width: 75%;
+    background-color: transparent;
+}
+
+.highlight {
+    color: #e9147e;
+    font-weight: bold;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-family: 'Romelio Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    color: #333;
+}
+
+/* About Us */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-us h2 {
+    font-family: 'Romelio Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact */
+.whatsapp {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.whatsapp h2 {
+    font-family: 'Romelio Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.whatsapp p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #1ebc5a;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #023613;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-area, .image-area {
+        max-width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .js-menu-hide {
+        display: none;
+    }
+
+    .menu-icon.active + .menu-list {
+        display: flex;
+    }
+}

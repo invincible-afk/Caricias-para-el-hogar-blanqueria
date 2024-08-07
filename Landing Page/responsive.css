@@ -1,0 +1,142 @@
+/*-------------------- CSS --------------------*/
+@media only screen and (max-width: 850px) {
+    nav {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    nav .menu-icon {
+        display: block;
+        font-family: 'Montserrat', sans-serif; /* Asegúrate de que la fuente esté cargada */
+    }
+
+    nav .menu-list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 80px 0;
+        height: 100vh;
+        min-width: 300px;
+        width: 40%;
+        background: hsla(0, 0%, 31%, 0.7);
+        backdrop-filter: blur(7px);
+        z-index: 5;
+        transition: transform 0.5s;
+        font-family: 'Romelio Sans', sans-serif;
+        font-size: 150px;
+    }
+
+    nav .menu-list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .js-menu-hide {
+        transform: translateX(100%);
+    }
+
+    main .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .text-area {
+        width: 100%;
+        padding: 0;
+    }
+
+    main .text-area .heading {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    main .image-area {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    main .image-area img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .featured-products .product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-products .product-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .about-us, .whatsapp {
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    nav {
+        padding-left: 10%;
+        padding-top: 20px;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    main .hero {
+        flex-direction: column;
+    }
+
+    main .text-area {
+        order: 2;
+        width: 100%;
+        padding: 0;
+    }
+
+    main .image-area {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    main .image-area img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .featured-products .product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-products .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-us, .whatsapp {
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main .text-area .heading {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+
+    .featured-products .product-item img {
+        width: 100%;
+        height: auto;
+    }
+}
