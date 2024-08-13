@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'Romelio Sans';
-    src: url('fonts/Romelio.woff2') format('woff2'),
-         url('fonts/Romelio.ttf') format('woff');
+    src: url('file:///C:/Users/Usuario/Desktop/proyectosweb/Landing%20Page/fonts/Romelio.woff2') format('woff2'),
+         url('file:///C:/Users/Usuario/Desktop/proyectosweb/Landing%20Page/fonts/Romelio.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a, img, button {
@@ -307,3 +308,148 @@ footer {
         display: flex;
     }
 }
+
+
+/* Demo */
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Color Variables */
+:root {
+    
+    --color-twitter: #2b97f1;
+    --color-instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1e3a96 90%);
+    --color-facebook: #3b5a9b;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Romelio Sans", sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+
+.social-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.social-icon--twitter {
+    background: var(--color-twitter);
+    color: #ffffff;
+}
+
+.social-icon--instagram {
+    background: var(--color-instagram);
+    color: #ffffff;
+}
+.social-icon--instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1e3a96 90%);
+}
+
+.social-icon--facebook {
+    background: var(--color-facebook);
+    color: #fff;
+}
+
+.social-icon i {
+    position: relative;
+    top: 1px;
+}
+
+/* Tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+    background: inherit;
+    
+}
+
+.tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+    border-top-color: inherit;
+}
+
+  
+  
+  /* Repetir para cada red social */
+  .social-icon--twitter .tooltip {
+    background: var(--color-twitter);
+    color: #ffffff;
+}
+
+.social-icon--twitter .tooltip:after {
+    border-top-color: var(--color-twitter);
+}
+
+.social-icon--instagram .tooltip {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1e3a96 90%);
+    color: #ffffff;
+}
+
+.social-icon--instagram .tooltip:after {
+    border-top-color: #fd9869; /* Ajusta este color para que combine bien con el gradiente */
+}
+
+
+.social-icon--facebook .tooltip {
+    background: var(--color-facebook);
+    color: #ffffff;
+}
+
+.social-icon--facebook .tooltip:after {
+    border-top-color: var(--color-facebook);
+}
+
+  
+  
+  
